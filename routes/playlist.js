@@ -44,7 +44,7 @@ module.exports = function (req, res) {
                 <title><![CDATA[${list[i].name} - ${singer}]]></title>
                 <description><![CDATA[歌手：${singer}<br>专辑：${list[i].al.name}<br>日期：${new Date(list[i].publishTime).toLocaleDateString()}<br><img referrerpolicy="no-referrer" src="${list[i].al.picUrl}">]]></description>
                 <guid>http://music.163.com/#/song?id=${list[i].id}</guid>
-                <link>hhttp://music.163.com/#/song?id=${list[i].id}</link>
+                <link>http://music.163.com/#/song?id=${list[i].id}</link>
             </item>`
             }
             rss += `
