@@ -1,10 +1,10 @@
 # NetEaseCloudMusic2RSS
 
-> 使用RSS订阅他喜欢的网易云音乐
+> 使用RSS订阅她喜欢的网易云音乐
 
 ## 使用
 
-
+订阅歌单：https://api.prprpr.me/necm2rss/playlist/35798529
 
 ## Author
 

@@ -1,7 +1,7 @@
 {
   "name": "NetEaseCloudMusic2RSS",
   "version": "0.0.1",
-  "description": "使用RSS订阅他喜欢的网易云音乐",
+  "description": "使用RSS订阅她喜欢的网易云音乐",
   "main": "index.js",
   "repository": {
     "type": "git",
