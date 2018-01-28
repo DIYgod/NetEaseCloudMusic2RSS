@@ -14,11 +14,11 @@ module.exports = function (req, res) {
 
     logger.info(`NetEaseCloudMusic2RSS id ${id}, IP: ${ip}`);
     request.post({
-        url: 'http://music.163.com/api/v3/playlist/detail',
+        url: 'https://music.163.com/api/v3/playlist/detail',
         headers: {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36',
-            'Referer': `http://music.163.com/`,
-            'Origin': 'http://music.163.com'
+            'Referer': `https://music.163.com/`,
+            'Origin': 'https://music.163.com'
         },
         form: {
             id: id
@@ -32,7 +32,7 @@ module.exports = function (req, res) {
             <rss version="2.0">
             <channel>
             <title>${data.playlist.name}</title>
-            <link>http://music.163.com/#/playlist?id=${id}</link>
+            <link>https://music.163.com/#/playlist?id=${id}</link>
             <description>网易云音乐歌单 - ${data.playlist.name}，使用 NetEaseCloudMusic2RSS(https://github.com/DIYgod/NetEaseCloudMusic2RSS) 构建</description>
             <language>zh-cn</language>
             <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
@@ -43,8 +43,8 @@ module.exports = function (req, res) {
             <item>
                 <title><![CDATA[${list[i].name} - ${singer}]]></title>
                 <description><![CDATA[歌手：${singer}<br>专辑：${list[i].al.name}<br>日期：${new Date(list[i].publishTime).toLocaleDateString()}<br><img referrerpolicy="no-referrer" src="${list[i].al.picUrl}">]]></description>
-                <guid>http://music.163.com/#/song?id=${list[i].id}</guid>
-                <link>http://music.163.com/#/song?id=${list[i].id}</link>
+                <guid>https://music.163.com/#/song?id=${list[i].id}</guid>
+                <link>https://music.163.com/#/song?id=${list[i].id}</link>
             </item>`
             }
             rss += `
