@@ -1,3 +1,5 @@
+# ⚠️ 此项目已被弃用并合入 [RSSHub](https://github.com/DIYgod/RSSHub)，请使用 [RSSHub](https://github.com/DIYgod/RSSHub)
+
 # NetEaseCloudMusic2RSS
 
 > 使用RSS订阅她喜欢的网易云音乐
